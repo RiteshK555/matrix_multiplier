@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<link  rel="stylesheet" href="./css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script type="module"  src="index.js"></script> -->
+
+<title>Matrix Multiplier</title>
+    </head>
+    <body>
+        <div style="text-align:center;"><h1 id="hidden">Matrix Multiplier</h1></div>
+        <!-- <table>
+            <tr>
+            <td> -->
+                <div class="form_class1">
+                    <form action="/" method="POST" id="form1">
+                        <label for="a1">a1</label>
+                        <input type="number"  step=".01" size="1" name="a1" id="a1">
+                        <label for="a2">a2</label>
+                        <input type="number" step=".01" size="1" name="a2" id="a2">
+                        <label for="a3">a3</label>
+                        <input type="number" step=".01" size="1"  name="a3" id="a3">
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        <label for="b1">b1</label>
+                        <input type="number" step=".01"  size="1" name="b1" id="b1">
+                        <label for="b2">b2</label>
+                        <input type="number" step=".01"  size="1" name="b2" id="b2">
+                        <label for="b3">b3</label>
+                        <input type="number" step=".01"  size="1"  name="b3" id="b3">
+                        <br>
+                        <br>
+                        <label for="a4">a4</label>
+                        <input type="number" step=".01"  size="1"  name="a4" id="a4">
+                        <label for="a5">a5</label>
+                        <input type="number" step=".01"  size="1" name="a5" id="a5">
+                        <label for="a6">a6</label>
+                        <input type="number" step=".01"  size="1"  name="a6" id="a6">
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        <label for="b4">b4</label>
+                        <input type="number" step=".01"  size="1" name="b4" id="b4">
+                        <label for="b5">b5</label>
+                        <input type="number" step=".01"  size="1" name="b5" id="b5">
+                        <label for="b6">b6</label>
+                        <input type="number" step=".01"  size="1"  name="b6" id="b6">
+                        <br>
+                        <br>
+                        <label for="a7">a7</label>
+                        <input type="number" step=".01"  size="1" name="a7" id="a7">
+                        <label for="a8">a8</label>
+                        <input type="number" step=".01"  size="1" name="a8" id="a8">
+                        <label for="a9">a9</label>
+                        <input type="number" step=".01"  size="1"  name="a9" id="a9">
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp 
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        &nbsp
+                        <label for="b7">b7</label>
+                        <input type="number" step=".01"  size="1" name="b7" id="b7">
+                        <label for="b8">b8</label>
+                        <input type="number" step=".01"  size="1" name="b8" id="b8">
+                        <label for="b9">b9</label>
+                        <input type="number" step=".01"  size="1"  name="b9" id="b9">
+                        <!-- <input id="calculate1" type="submit"  name="" value="calculate" >  -->
+                        <input type="submit"  name="submit" class="inputSubmit" id="submit1" >
+                    </form>
+                </div>
+            <!-- </td> -->
+            <!-- <td>
+                <div class="form_class2">
+                    <form action="/" method="POST" id="form2">
+                        <label for="b1">b1</label>
+                        <input type="text" size="1" name="b1" id="b1">
+                        <label for="b2">b2</label>
+                        <input type="text" size="1" name="b2" id="b2">
+                        <label for="b3" >b3</label>
+                        <input type="text" size="1"  name="b3" id="b3">
+                        <br>
+                        <br>
+                        <label for="b4">b4</label>
+                        <input type="text" size="1" name="b4" id="b4">
+                        <label for="b5">b5</label>
+                        <input type="text" size="1" name="b5" id="b5">
+                        <label for="b6">b6</label>
+                        <input type="text" size="1"  name="b6" id="b6">
+                        <br>
+                        <br>
+                        <label for="b7">b7</label>
+                        <input type="text" size="1" name="b7" id="b7">
+                        <label for="b8">b8</label>
+                        <input type="text" size="1" name="b8" id="b8">
+                        <label for="b9">b9</label>
+                        <input type="text" size="1"  name="b9" id="b9">
+                        <input type="submit" name="submit" class="inputSubmit"  id="submit2"  > -->
+                        <!-- <input id="calculate2"  type="submit"  name="" value="calculate" > 
+                    </form>
+                </div>
+            </td> -->
+            <!-- </tr> -->
+        <!-- </table> -->
+        <!-- <input type="submit" name="submit" id=""  > -->
+        <!-- <button id="calculate3" type="submit">submit</button> -->
+        <!-- <script>
+            submitForms=function(){
+                document.getElementById("form1").submit();
+                document.getElementById("form2").submit();
+            }
+        </script> -->
+        <div class="inputClass">
+            <input id="calculate3" type="button"  name="" value="calculate"> 
+        </div>
+        <script type="module"   src="./index.js"></script>
+    </body>
+</html>

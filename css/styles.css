@@ -1,0 +1,34 @@
+.form_class1{
+    padding-left: 300px;
+    padding-top: 100px;
+    height: auto;
+    width: auto;
+}
+h1{
+    animation:blinkingText 0.3s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    40%{    color: ornage; }
+    60%{    color: pink; }
+    90%{    color:transparent;  }
+    100%{   color: green;    }
+}
+.form_class2{
+    padding-left: 300px;
+    padding-top: 100px;
+    width: auto;
+    height: auto;
+}
+.inputClass{
+    padding-left: 650px;
+}
+.inputSubmit{
+    visibility: hidden;
+}
+/* #calculate3{
+    
+} */
+input[type=number]{
+    width: 50px;
+} 
